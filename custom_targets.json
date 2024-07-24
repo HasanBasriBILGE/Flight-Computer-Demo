@@ -1,0 +1,7 @@
+{
+    "CUSTOM_F401RE": {
+            "inherits": ["NUCLEO_F401RE"],
+            "components": ["SD"],
+            "features_add": ["STORAGE"]
+        }
+}

@@ -1,0 +1,24 @@
+{
+    "config": {
+        "UART_RX": "ARDUINO_UNO_D0",
+        "UART_TX": "ARDUINO_UNO_D1",
+        "SPI_CS": "ARDUINO_UNO_D10",
+        "SPI_MOSI": "ARDUINO_UNO_D11",
+        "SPI_MISO": "ARDUINO_UNO_D12",
+        "SPI_CLK": "ARDUINO_UNO_D13",
+        "DEBUG_MSG": 0,
+        "DEVICE_SPI": 1,
+        "FSFAT_SDCARD_INSTALLED": 1
+    },
+    "target_overrides": {
+        "*": {
+            "platform.stdio-convert-newlines": 1
+        },
+        "NUCLEO_F401RE": {
+             "SPI_MOSI": "SPI_MOSI",
+             "SPI_MISO": "SPI_MISO",
+             "SPI_CLK":  "SPI_SCK",
+             "SPI_CS":   "SPI_CS"
+        }
+    }
+}
